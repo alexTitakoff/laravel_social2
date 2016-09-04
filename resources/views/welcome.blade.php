@@ -1,45 +1,73 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('layouts.master')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
-        <style>
-            html, body {
-                height: 100%;
-            }
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+@section('title')
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+Wellcome!
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+@endsection
 
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
+
+
+@section('content')
+
+<div class="row">
+    <div class="col-md-3">
+        <h3>Sing up</h3>
+        <form action="#" method="post" >
+
+            <div class="form-group">
+                <label for="email">Youe email</label>
+                <input class="form-control" type="text" name="email" id="email">
             </div>
-        </div>
-    </body>
-</html>
+
+
+            <div class="form-group">
+                <label for="firstname">Youe firstname</label>
+                <input class="form-control" type="text" name="firstname" id="firstname">
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="password">Youe password</label>
+                <input class="form-control" type="password" name="password" id="password">
+            </div>
+
+            <button type="submit" class="btn btn-primary" >Submit</button>
+            
+        </form>
+    </div>
+
+
+
+    <div class="col-md-3">
+        <h3>Sing in</h3>
+        <form action="#" method="post" >
+
+            <div class="form-group">
+                <label for="email">Youe email</label>
+                <input class="form-control" type="text" name="email" id="email">
+            </div>
+
+
+            <div class="form-group">
+                <label for="password">Youe password</label>
+                <input class="form-control" type="password" name="password" id="password">
+            </div>
+
+            <button type="submit" class="btn btn-primary" >Submit</button>
+            
+        </form>
+    </div>
+
+</div>
+
+@endsection
+
+
+
+
+
+
